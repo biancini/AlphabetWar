@@ -3,7 +3,7 @@ solution: AlphabetWar.sln
 
 install:
   - nuget restore AlphabetWar.sln
-  - nuget install NUnit.ConsoleRunners -Version 3.8.0
+  - nuget install NUnit.ConsoleRunner -Version 3.8.0
 
 script:
   - xbuild /p:Configuration=Release AlphabetWar.sln
