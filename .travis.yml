@@ -3,8 +3,8 @@ solution: AlphabetWar.sln
 
 install:
   - nuget restore AlphabetWar.sln
-  - nuget install NUnit.Runners -Version 3.8.0
+  - nuget install NUnit.ConsoleRunners -Version 3.8.0
 
 script:
   - xbuild /p:Configuration=Release AlphabetWar.sln
-  - mono ./packages/NUnit.Runners.3.8.0/tools/nunit-console.exe ./UnitTests/bin/Release/UnitTests.dll
+  - mono ./packages/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe ./UnitTests/bin/Release/UnitTests.dll
